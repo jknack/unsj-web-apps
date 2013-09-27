@@ -1,0 +1,19 @@
+.logo {
+  width: 200px;
+}
+
+.w400 {
+  width: 400px;
+}
+
+.reveal pre {
+  box-shadow: none;
+}
+
+.reveal pre code {
+  max-height: 500px;
+}
+
+.clearfix {
+  clear: both;
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Aplicaciones Web Modernas</title>
+
+<meta name="description" content="Aplicaciones Web Modernas">
+
+<meta name="author" content="Edgar Espina">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/jugar.css" id="theme">
+<link rel="stylesheet" href="css/unsj.css">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+  document.write('<link rel="stylesheet" href="css/print/'
+      + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
+      + '.css" type="text/css" media="print">');
+</script>
+
+<!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section class="cover">
+        <h1>Aplicaciones Web Modernas</h1>
+        <h3>Arquitectura, Diseño e Implementación de aplicaciones web en Java</h3>
+      </section>
+
+      <section class="cover">
+        <h2>Agenda:</h2>
+        <ul>
+          <li><a href="https://github.com/jknack/modern-web-app">MWA</a>: Arquitectura, acoplamiento, cohesion, modulos, unit test, integración continua, cobertura de código</li>
+          <li>Applicación como producto y como servicio</li>
+          <li>Introducción a Spring MVC 3.x</li>
+          <li>Breve introducción a HTML5 y JavaScript</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><a href="https://github.com/jknack/modern-web-app">MWA</a>: Arquitectura de una aplicación web moderna</h2>
+        <ul>
+          <li>Es un conjunto de buenas prácticas para construir aplicaciones web en Java</li>
+          <li>Basada en: <strong>Servlet 3.0</strong>, <strong>Spring 3.2.x</strong> with <strong>Maven 3.x</strong></li>
+          <li>Minimo tiempo de creación y configuración</li>
+          <li>Basada en modulos para incrementar productividad</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tecnología utilizada en <a href="https://github.com/jknack/modern-web-app">MWA</a></h2>
+        <ul>
+          <li>Java Servlet 3.x</li>
+          <li>Inyección de dependencies</li>
+          <li>REST JSON API con Spring MVC 3.x</li>
+          <li>JPA 2.x / Mongo / Neo4j / QueryDSL / etc</li>
+          <li>Maven 3.x</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fundamentos de <a href="https://github.com/jknack/modern-web-app">MWA</a></h2>
+        <ul>
+          <li>Evitar XML para inyección de dependencias</li>
+          <li>Ambiente/Entorno de aplicación</li>
+          <li>Reutilizar Software mediante el uso de modulos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Part II</h2>
+      </section>
+
+      <section>
+        <h2>HTML 5, JavaScript and Spring MVC</h2>
+        <ul>
+          <li>Que es HTML5?</li>
+          <li>Porque es importante JavaScript?</li>
+          <li>Spring MVC para la creación de HTML</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>HTML 5</h2>
+        <ul>
+          <li>Conjunto de especificaciones y standares para el desarrollo de aplicaciones Web</li>
+          <li>Tecnologias obsoletas: Flash (Flex), Active.X, Applets</li>
+          <li>Notables mejoras en el engine de visualización: en especial WebKit</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Por que JavaScript?</h2>
+        <ul>
+          <li>Casi tan antiguo como la web misma y uno de los mejores lenguajes jamas creados</li>
+          <li>Notables mejoras en los motores/engine de JavaScript: en especial v8 (Google Chrome)</li>
+          <li>jQuery everywhere</li>
+          <li>Extensa biblioteca con miles y miles de librerias</li>
+          <li>Aplicación de MVC en el navegador</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Preguntas?</h2>
+      </section>
+    </div>
+
+    <footer>
+      <img src="img/logo-jugar.png">
+      <div class="lines">
+        <hr />
+        <hr />
+      </div>
+      <small style="float: right;">by <a href="http://twitter.com/edgarespina">@edgarespina</a></small>
+    </footer>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls : true,
+        progress : true,
+        history : true,
+        center : false,
+        rollingLinks : false,
+
+        width : '90%',
+
+        theme : Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition : Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies : [ {
+          src : 'lib/js/classList.js',
+          condition : function() {
+            return !document.body.classList;
+          }
+        }, {
+          src : 'plugin/highlight/highlight.js',
+          async : true,
+          callback : function() {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+        ]
+      });
+    </script>
+
+</body>
+</html>

@@ -4,3 +4,10 @@
 *.jar
 *.war
 *.ear
+.project
+target
+web.xml
+.settings
+.classpath
+bin
+.factorypath

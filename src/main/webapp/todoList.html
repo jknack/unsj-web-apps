@@ -1,0 +1,18 @@
+{{#partial "title"}}Lista de Pendientes{{/partial}}
+
+{{#partial "content"}}
+
+<a href="todo">Nuevo</a>
+<ul>
+  {{#pendientes}}
+  <li>
+    <span>{{nombre}}</span>
+    <input type="checkbox" {{#finalizado}} checked="checked" {{/finalizado}}/>
+    <a href="todo/{{id}}">Editar</a>
+  </li>
+  {{/pendientes}}
+</ul>
+
+{{/partial}}
+
+{{> base}}

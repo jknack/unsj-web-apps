@@ -1,0 +1,25 @@
+{{#partial "title"}}Pendiente{{/partial}}
+
+{{#partial "content"}}
+
+{{#pendiente}}
+<form action="{{action}}" method="post">
+  <div>
+    <input type="hidden" name="id" value="{{id}}" />
+    <label>Nombre</label>:
+    <input name="nombre" value="{{nombre}}" size="100" />
+  </div>
+  {{^isNew}}
+  <div>
+    <label>Finalizado</label>:
+    <input name="finalizado" type="checkbox" {{#finalizado}}checked="checked"{{/finalizado}} />
+  </div>
+  {{/isNew}}
+  <hr />
+  <input type="submit" />
+</form>
+{{/pendiente}}
+
+{{/partial}}
+
+{{> base}}
